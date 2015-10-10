@@ -1,7 +1,7 @@
 {
   "name": "react-shallow-renderer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple wrapper for `react-addons-test-utils` `createRenderer` method.",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel --stage 0 src/index.js > lib/index.js",
@@ -15,5 +15,13 @@
   "dependencies": {
     "react": "^0.14.0",
     "react-addons-test-utils": "^0.14.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmarkclements/react-shallow-renderer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidmarkclements/react-shallow-renderer/issues"
+  },
+  "homepage": "https://github.com/davidmarkclements/react-shallow-renderer#readme"
 }
