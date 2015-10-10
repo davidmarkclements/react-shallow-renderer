@@ -1,6 +1,6 @@
 {
   "name": "react-shallow-renderer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple wrapper for `react-addons-test-utils` `createRenderer` method.",
   "main": "lib/index.js",
   "scripts": {
