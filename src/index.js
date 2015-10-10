@@ -1,8 +1,11 @@
 const {createRenderer} = require('react-addons-test-utils')
 
 const wrap = renderer => {
-  const render = () => 
+  const render = () => {
+    Object.keys(render).forEach(k => render[k] = null)
     Object.assign(render, renderer.getRenderOutput())
+  }
+
   Object.setPrototypeOf(render, {render})
   render()
   return render
