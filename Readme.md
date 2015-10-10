@@ -55,9 +55,8 @@ renderedCmp = rendererCmp.render() //same thing
 
 ### `createRenderer`
 
-Just in case there is a scenario where we need a multi-stage
-shallow render process, we also attach the `createRenderer` function
-from `react-addons-test-utils` for convenience.
+Just in case we ever need the raw `createRenderer`, it's attached
+to the module for convenience.
 
 This example does the same as the re-render example above
 
