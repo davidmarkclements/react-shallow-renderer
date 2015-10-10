@@ -26,14 +26,17 @@ from `react-addons-test-utils` for convenience.
 
 ```js
 const {createRenderer} = require('react-shallow-renderer')
-const MyCmp = require('MyCmp')
+let MyCmp = require('MyCmp')
 const renderer = createRenderer()
 renderer.render(<MyCmp/>)
-const renderedCmp = renderer.getRenderOutput()
-```
+let renderedCmp = renderer.getRenderOutput()
+//run a click event that sets state etc.
+renderedCmp.props.children[0].props.onClick()
+//view re-render with new state
+renderedCmp = renderer.getRenderOutput()
 
-If anyone happens to find or know a scenario for this approach
-I'd love to hear about it.
+
+```
 
 
 ## Info
