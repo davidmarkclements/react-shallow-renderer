@@ -4,6 +4,7 @@ const wrap = renderer => {
   const render = () => {
     Object.keys(render).forEach(k => render[k] = null)
     Object.assign(render, renderer.getRenderOutput())
+    return render
   }
 
   Object.setPrototypeOf(render, {render})
