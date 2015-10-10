@@ -31,7 +31,7 @@ re-render simply call the component:
 ```js
 const renderedCmp = render(<MyCmp/>)
 renderedCmp.props.children[0].props.onClick()
-rendererCmp() //boom: re-rendered.
+renderedCmp() //boom: re-rendered.
 ```
 
 If that's a little too terse, there's also the
@@ -40,7 +40,7 @@ If that's a little too terse, there's also the
 ```js
 const renderedCmp = render(<MyCmp/>)
 renderedCmp.props.children[0].props.onClick()
-rendererCmp.render()
+renderedCmp.render()
 ```
 
 Re-rendering causes the component object to mutate,
@@ -50,7 +50,7 @@ is returned so if you prefer that style feel free):
 ```js
 let renderedCmp = render(<MyCmp/>)
 renderedCmp.props.children[0].props.onClick()
-renderedCmp = rendererCmp.render() //same thing
+renderedCmp = renderedCmp.render() //same thing
 ```
 
 ### `createRenderer`
